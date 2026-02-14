@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Marija ❤️</title>
+<style>
+body {
+  margin:0;
+  padding:0;
+  background: radial-gradient(circle at top, #140010, #000);
+  font-family:'Poppins', sans-serif;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  overflow:hidden;
+  text-align:center;
+  position: relative;
+}
+
+/* Twinkling stars */
+.star {
+  position:absolute;
+  background:white;
+  border-radius:50%;
+  opacity:0.8;
+  animation: twinkle linear infinite;
+}
+@keyframes twinkle {
+  0%,100% {opacity:0.1; transform:scale(1);}
+  50% {opacity:0.9; transform:scale(1.5);}
+}
+
+/* Heart container */
+.heart {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  animation: heartFloat 6s ease-in-out infinite;
+  z-index:1;
+  position:relative;
+}
+
+/* Heart float / pulse */
+@keyframes heartFloat {
+  0% { transform: translate(0,0) scale(1);}
+  25% { transform: translate(-5px,-5px) scale(1.02);}
+  50% { transform: translate(0,-10px) scale(1.05);}
+  75% { transform: translate(5px,-5px) scale(1.02);}
+  100% { transform: translate(0,0) scale(1);}
+}
+
+/* Heart lines */
+.heart-line {
+  font-size:18px;
+  line-height:1.6;
+  color:#fff;
+  font-weight:600;
+  opacity:0;
+  animation: fadeIn 1.5s forwards, glow 2s infinite alternate, swayRotate 8s ease-in-out infinite;
+  text-shadow:
+    0 0 5px #ff4d6d,
+    0 0 10px #ff4d6d,
+    0 0 20px #ff99aa,
+    0 0 30px #ff99aa;
+  margin: 2px 0;
+  position: relative;
+  transform-origin:50% 50%;
+}
+
+/* Glow effect */
+@keyframes glow {
+  from { text-shadow:0 0 5px #ff4d6d,0 0 10px #ff4d6d,0 0 20px #ff99aa,0 0 30px #ff99aa; }
+  to { text-shadow:0 0 10px #ff4d6d,0 0 20px #ff4d6d,0 0 30px #ff99aa,0 0 40px #ff99aa; }
+}
+
+/* Soft sway and rotation along a heart curve */
+@keyframes swayRotate {
+  0%,100% { transform: translateX(0) translateY(0) rotate(0deg);}
+  25% { transform: translateX(-15px) translateY(-8px) rotate(-3deg);}
+  50% { transform: translateX(0px) translateY(-15px) rotate(0deg);}
+  75% { transform: translateX(15px) translateY(-8px) rotate(3deg);}
+}
+
+/* Sequential fade-in */
+.heart-line:nth-child(1){animation-delay:0.5s;}
+.heart-line:nth-child(2){animation-delay:1s;}
+.heart-line:nth-child(3){animation-delay:1.5s;}
+.heart-line:nth-child(4){animation-delay:2s;}
+.heart-line:nth-child(5){animation-delay:2.5s;}
+.heart-line:nth-child(6){animation-delay:3s;}
+.heart-line:nth-child(7){animation-delay:3.5s;}
+.heart-line:nth-child(8){animation-delay:4s;}
+
+/* Fade in */
+@keyframes fadeIn { to{opacity:1;} }
+
+/* Center I LOVE YOU */
+.center-message {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:36px;
+  font-weight:700;
+  color:#ff4d6d;
+  text-shadow:0 0 10px #ff99aa,0 0 20px #ff4d6d;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { transform: translate(-50%, -50%) scale(1);}
+  50% { transform: translate(-50%, -50%) scale(1.1);}
+}
+
+/* Floating hearts */
+.floating-heart {
+  position:absolute;
+  opacity:0.8;
+  animation-name:floatHeart;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+@keyframes floatHeart {
+  0% { transform: translateY(100vh) scale(1); opacity:0; }
+  10% { opacity:1; }
+  50% { transform: translateY(50vh) scale(1.2); }
+  100% { transform: translateY(-20vh) scale(1); opacity:0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Stars -->
+<div class="star" style="width:2px;height:2px;top:10%;left:15%;animation-duration:5s;"></div>
+<div class="star" style="width:3px;height:3px;top:20%;left:50%;animation-duration:6s;"></div>
+<div class="star" style="width:2px;height:2px;top:70%;left:30%;animation-duration:4s;"></div>
+<div class="star" style="width:2px;height:2px;top:40%;left:70%;animation-duration:7s;"></div>
+<div class="star" style="width:3px;height:3px;top:80%;left:85%;animation-duration:5s;"></div>
+<div class="star" style="width:2px;height:2px;top:60%;left:10%;animation-duration:6s;"></div>
+
+<!-- Heart Lines -->
+<div class="heart">
+  <span class="heart-line" style="transform: translateX(-8px);">❤️ Happy Valentine’s Day, Marija ❤️</span>
+  <span class="heart-line" style="transform: translateX(-5px);">You are my calm in every storm,</span>
+  <span class="heart-line" style="transform: translateX(0px);">The warmth in my silence,</span>
+  <span class="heart-line" style="transform: translateX(5px);">The smile that lights my darkest days,</span>
+  <span class="heart-line" style="transform: translateX(8px);">The feeling I never want to lose,</span>
+  <span class="heart-line" style="transform: translateX(5px);">Loving you is my favorite thing,</span>
+  <span class="heart-line" style="transform: translateX(0px);">Always choosing you, every day,</span>
+  <span class="heart-line" style="transform: translateX(-5px);">Forever and always ❤️</span>
+</div>
+
+<!-- Center I LOVE YOU -->
+<div class="center-message">I ❤️ YOU</div>
+
+<!-- Floating hearts -->
+<div class="floating-heart" style="left:5vw; animation-duration:8s; font-size:16px;">❤️</div>
+<div class="floating-heart" style="left:12vw; animation-duration:7s; font-size:14px;">💓</div>
+<div class="floating-heart" style="left:18vw; animation-duration:9s; font-size:18px;">🤍</div>
+<div class="floating-heart" style="left:25vw; animation-duration:6s; font-size:16px;">❤️</div>
+<div class="floating-heart" style="left:32vw; animation-duration:10s; font-size:20px;">💓</div>
+<div class="floating-heart" style="left:40vw; animation-duration:8s; font-size:16px;">🤍</div>
+<div class="floating-heart" style="left:48vw; animation-duration:9s; font-size:18px;">❤️</div>
+<div class="floating-heart" style="left:55vw; animation-duration:7s; font-size:16px;">💓</div>
+<div class="floating-heart" style="left:62vw; animation-duration:10s; font-size:22px;">🤍</div>
+<div class="floating-heart" style="left:70vw; animation-duration:9s; font-size:20px;">❤️</div>
+<div class="floating-heart" style="left:78vw; animation-duration:8s; font-size:18px;">💓</div>
+<div class="floating-heart" style="left:85vw; animation-duration:7s; font-size:16px;">🤍</div>
+<div class="floating-heart" style="left:92vw; animation-duration:10s; font-size:20px;">❤️</div>
+
+</body>
+</html>
